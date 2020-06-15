@@ -1,0 +1,165 @@
+html {
+	font-family: system-ui,
+		/* macOS 10.11-10.12 */ -apple-system,
+		/* Windows 6+ */ "Segoe UI",
+		/* Android 4+ */ "Roboto",
+		/* Ubuntu 10.10+ */ "Ubuntu",
+		/* Gnome 3+ */ "Cantarell",
+		/* KDE Plasma 5+ */ "Noto Sans",
+		/* fallback */ sans-serif;
+}
+
+body {
+	font-size: 18px;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 6px;
+	color: #333;
+}
+
+h1 {
+	text-align: center;
+}
+
+input, button {
+	font: inherit;
+	color: inherit;
+}
+
+button {
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	padding: 3px 9px;
+	cursor: pointer;
+	background-color: #F1F1F1;
+}
+
+button:active {
+	background-color: #09F;
+	color: white;
+	border-color: #07F;
+}
+
+button.red {
+	color: maroon;
+	border-color: maroon;
+}
+
+button.red:active {
+	background-color: maroon;
+	color: white;
+	border-color: maroon;
+}
+
+.button-bar button {
+	border-radius: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.button-bar button + button {
+	border-left: none;
+}
+
+.button-bar button:first-child {
+	border-radius: 3px 0 0 3px;
+}
+
+.button-bar button:last-child {
+	border-radius: 0 3px 3px 0;
+}
+
+input.red {
+	border-color: red;
+	background-color: rgba(255, 0, 0, .2);
+	color: maroon;
+}
+
+td.red {
+	background-color: maroon;
+	color: white;
+}
+
+.bubble {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
+	margin-right: .4em;
+	border-radius: 1em;
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, .2));
+	cursor: pointer;
+}
+
+.bubble.no-color {
+	transform: rotate(180deg);
+}
+
+.table-box {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 1em 0;
+	min-width: 100%;
+	overflow-x: auto;
+}
+
+th, td {
+	padding: 6px;
+	border: 1px solid #DDD;
+	white-space: nowrap;
+}
+
+td.actions button + button {
+	margin-left: 6px;
+}
+
+.score-box {
+	padding-left: 1em;
+	padding-right: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.score-box > * {
+	text-align: center;
+}
+
+.rank {
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, .1));
+	background-color: #FEFEFE;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border-radius: 1em;
+	padding: 6px;
+	vertical-align: middle;
+	text-align: center;
+	transform: scale(.5);
+}
+
+.rank.r1 {
+	background-color: gold;
+	transform: scale(.9);
+}
+
+.rank.r2 {
+	background-color: silver;
+	transform: scale(.8);
+}
+
+.rank.r3 {
+	background-color: burlywood;
+	transform: scale(.7);
+}
+
+form > * + * {
+	margin-left: 6px;
+}
+
+@media (min-width: 960px) {
+}
